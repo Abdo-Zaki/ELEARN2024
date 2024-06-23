@@ -1,0 +1,24 @@
+.add_work {
+    width: 100%;
+    /* width: 275px; */
+    background-color: var(--light-grey);
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 19px;
+    box-shadow: var(--main-shadow);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_work input {
+    display: none;
+}
+
+.customFileInput {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}

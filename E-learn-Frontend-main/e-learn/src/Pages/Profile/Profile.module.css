@@ -1,0 +1,267 @@
+.profile {
+    padding: 25px;
+    background-color: var(--light-grey);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--main-arabic-shadow);
+    z-index: 1000;
+    position: relative;
+}
+
+.title {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box {
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.box:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.box .row {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.data {
+    width: 40%;
+}
+
+
+.label {
+    color: var(--main-color);
+    margin-bottom: 8px;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.password_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit {
+    padding: 10px 15px;
+    border: 2px dashed var(--main-color);
+    border-radius: 10px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.input {
+    padding: 9px 10PX;
+    background-color: var(--light-grey);
+    /* font-size: 15px; */
+    caret-color: var(--main-color);
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: var(--inset-input-shadow);
+    border: 1px solid var(--main-color);
+    width: 20%;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #104454;
+}
+
+.warning {
+    margin-top: 10px;
+    color: rgb(218, 0, 0);
+    font-size: 14px;
+}
+
+[dir="ltr"] .password_button {
+    margin-right: 10px;
+}
+
+[dir="rtl"] .password_button {
+    margin-left: 10px;
+}
+
+.email_container {
+    width: 40%;
+}
+
+.email_container label {
+    color: var(--main-color);
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add_email {
+    padding: 2px 10px;
+    background-color: var(--light-grey);
+    box-shadow: var(--main-shadow);
+    border-radius: 8px;
+    border: 2px solid var(--secondry-color);
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 0.4s;
+    margin-bottom: 15px;
+}
+
+.add_email:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+@media (max-width:768px) {
+    .box .row {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .data {
+        padding-bottom: 10px;
+        border: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .email_container {
+        width: 100%;
+    }
+
+    .input {
+        width: 50%;
+    }
+}
+
+.email_input {
+    width: 100%;
+}
+
+/* Profile.module.css */
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.email_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.email_input {
+    margin-top: 5px;
+}
+
+.add_email {
+    margin-top: 5px;
+    padding: 5px 10px;  /* Adjust padding for smaller button */
+    font-size: 0.9em;  /* Adjust font size for smaller text */
+    width: auto;  /* Allow button to adjust width based on content */
+    max-width: 200px;  /* Optionally, set a max width */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.profile {
+    padding: 20px;
+}
+
+.image img {
+    border-radius: 50%;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+.password_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password_button {
+    display: flex;
+    align-items: center;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin-top: 5px;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.warning {
+    color: red;
+    margin-top: 5px;
+}

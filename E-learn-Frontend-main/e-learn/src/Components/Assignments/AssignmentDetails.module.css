@@ -1,0 +1,57 @@
+.assignment_details {
+    background-color: var(--light-grey);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--grey-shadow);
+    padding: 20px;
+    z-index: 100;
+    height: fit-content;
+    margin: 0 15px;
+}
+
+
+
+.assignment_container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container {
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 8px;
+    color: var(--main-color);
+    padding: 20px 0;
+}
+
+.container:not(:last-child) {
+    border-bottom: 1px var(--main-color) solid;
+}
+
+[dir="rtl"] .container .icon {
+    margin-left: 15px;
+}
+
+[dir="ltr"] .container .icon {
+    margin-right: 15px;
+}
+
+.button_container {
+    display: flex;
+    margin-top: 20px;
+}
+
+[dir="rtl"] .delete_button {
+    margin-right: 30px;
+}
+
+[dir="ltr"] .delete_button {
+    margin-left: 30px;
+}
+
+@media (max-width:930px) {
+    .assignment_details {
+        margin-top: 15px;
+    }
+}
